@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Timers;
 using System.IO;
 using System.Collections.Generic;
@@ -109,7 +109,7 @@ namespace ServerVote
                 switch (response.response)
                 {
                     case "success":
-                        e.Player.SendSuccessMessage("[TServerWeb] Vote successful:\n" + response.message);
+                        e.Player.SendSuccessMessage("[TServerWeb] " + response.message);
                         break;
                     case "failure":
                         e.Player.SendErrorMessage("[TServerWeb] Vote failed, please contact an admin.");
